@@ -3,6 +3,8 @@ config = require('./config');
 
 util = require('util');
 mysql = require('mysql');
+csv = require('fast-csv');
+fs = require('fs');
 
 EventEmitter = require('events').EventEmitter;
 DB = require('db');
