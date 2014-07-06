@@ -6,9 +6,7 @@ mysql = require('mysql');
 
 EventEmitter = require('events').EventEmitter;
 DB = require('db');
+MyFavoriteMovies = require('my-favorite-movies');
 
-var db = new DB();
-
-db.on('ready', function (e) {
-	console.log(e);
-});
+db = new DB();
+app = new MyFavoriteMovies();
